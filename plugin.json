@@ -1,9 +1,9 @@
 {
   "name": "plugin-flomo-sync",
-  "author": "winter60",
-  "url": "https://github.com/winter60/plugin-flomo-sync",
-  "version": "999",
-  "minAppVersion": "2.11.1",
+  "author": "onemonet",
+  "url": "https://github.com/onemonet/siyuan-flomo-sync",
+  "version": "1.0.0",
+  "minAppVersion": "3.0",
   "backends": [
     "all"
   ],
@@ -26,9 +26,7 @@
     "openCollective": "",
     "patreon": "",
     "github": "",
-    "custom": [
-      "https://afdian.net/a/firework"
-    ]
+    "custom": []
   },
   "keywords": [
     "浮墨", "flomo","同步","sync"
