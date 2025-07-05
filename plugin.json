@@ -2,7 +2,7 @@
   "name": "plugin-flomo-sync",
   "author": "winter60",
   "url": "https://github.com/winter60/plugin-flomo-sync",
-  "version": "0.1.0",
+  "version": "999",
   "minAppVersion": "2.11.1",
   "backends": [
     "all"
@@ -12,11 +12,11 @@
   ],
   "displayName": {
     "default": "flomo sync",
-    "zh_CN": "浮墨同步"
+    "zh_CN": "Flomo同步"
   },
   "description": {
     "default": "flomo sync",
-    "zh_CN": "浮墨同步"
+    "zh_CN": "Flomo同步"
   },
   "readme": {
     "default": "README.md",
