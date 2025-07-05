@@ -2,11 +2,11 @@ AI修改测试，自用
 
 ### 功能介绍
 
-> 将[flomo](https://v.flomoapp.com/)的内容同步到思源（自动从上次同步时间处开始）[<< 更新日志](https://github.com/winter60/plugin-flomo-sync/blob/main/CHANGELOG.md)
+> 将[flomo](https://v.flomoapp.com/)的内容同步到思源（自动从上次同步时间处开始）
 
 1. 支持将flomo中的memo同步到指定文档或指定笔记本的daily notes中。
 2. 支持筛选或排除某些标签同步flomo。
-3. 支持自定义内容模板，可包含创建时间、标签等信息。
+3. 支持自定义内容模板，可包含更新时间、标签等信息。
 4. **新增**：支持按日期自动分组保存到Daily Notes，支持升序/降序排列。
 
 
@@ -20,7 +20,7 @@ AI修改测试，自用
   - **指定文档中**：保存到指定文档
 * `同步标签方案`是选择排除某些标签还是包含某些标签来同步。默认采用排除标签方案，不填写内容就是所有都支持。 `同步排除标签` 和`同步包含标签`可以填单标签，也可以填多标签，中间用空格隔开。
 * `内容模板` 支持自定义同步内容的格式，支持以下变量：
-  - `${time}`: flomo memo的创建时间（格式：YYYY-MM-DD HH:mm:ss）
+  - `${time}`: flomo memo的更新时间（格式：YYYY-MM-DD HH:mm:ss）
   - `${content}`: memo的内容
   - `${tags}`: memo的标签（格式：#标签1 #标签2）
   
@@ -28,7 +28,7 @@ AI修改测试，自用
   
   **注意**：
   - 每个memo会作为独立的内容块写入，不再使用列表格式
-  - 时间字段使用flomo API返回的`created_at`字段，确保显示的是memo在flomo中的实际创建时间
+  - 时间字段使用flomo API返回的`updated_at`字段，确保显示的是memo在flomo中的实际更新时间
   - 当memo内容包含多行时，会根据模板中`${content}`前的符号自动决定后续行的格式。例如：
 
     **模板1：**
@@ -84,7 +84,7 @@ AI修改测试，自用
 
 当选择"指定笔记本daily note中"时，插件会：
 
-1. **按日期自动分组**：根据memo的创建时间，自动创建对应日期的Daily Note页面
+1. **按日期自动分组**：根据memo的更新时间，自动创建对应日期的Daily Note页面
 2. **智能排序**：根据配置的排序方式，对memos进行时间排序
 3. **批量保存**：将同一日期的memos保存到对应的Daily Note中
 
@@ -102,13 +102,3 @@ AI修改测试，自用
 - 2023-12-08 Daily Note：memo2, memo1
 - 2023-12-09 Daily Note：memo3
 
-### 特别感谢
-参考了[flomo 同步助手 - by mdzz2048 - 动作信息 - Quicker](https://getquicker.net/Sharedaction?code=02ed5443-2dc2-47a1-2ed0-08db2d92bfe7) 
-使用了f佬提供的[plugin-sample-vite模板仓库](https://github.com/frostime/plugin-sample-vite)。
-还有思源插件开发者里帮我解决问题小伙伴们，vv大佬、折腾群群主、Z佬等等，非常感谢你们
-
-### 其他想说
-本插件是因为自己需要移动端速记功能，按照自己的喜好开发，简单就好，如有特别个性话的要求，可能不能满足你。有反馈、建议或好的想法可以去github仓库[提issue](https://github.com/winter60/plugin-flomo-sync)或[链滴反馈](https://ld246.com/article/1702016411231)，我看根据是否适合自己来改。如果想请我喝杯咖啡，[请点这里](https://afdian.net/a/firework)
-
-### 免责声明
-该插件仅供用户交流学习，如果有侵犯flomo权益，请联系`ali60@qq.com`从集市下架和删除相关仓库。
