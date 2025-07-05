@@ -1,9 +1,9 @@
 {
-  "name": "plugin-flomo-sync",
+  "name": "siyuan-flomo-sync",
   "author": "onemonet",
   "url": "https://github.com/onemonet/siyuan-flomo-sync",
-  "version": "1.0.0",
-  "minAppVersion": "3.0",
+  "version": "1",
+  "minAppVersion": "3.1.6",
   "backends": [
     "all"
   ],
@@ -11,24 +11,15 @@
     "all"
   ],
   "displayName": {
-    "default": "flomo sync",
-    "zh_CN": "Flomo同步"
+    "en_US": "siyuan-flomo-sync",
+    "zh_CN": "flomo同步"
   },
   "description": {
-    "default": "flomo sync",
-    "zh_CN": "Flomo同步"
+    "en_US": "flomo同步",
+    "zh_CN": "siyuan-flomo-sync"
   },
   "readme": {
-    "default": "README.md",
+    "en_US": "README_en_US.md",
     "zh_CN": "README.md"
-  },
-  "funding": {
-    "openCollective": "",
-    "patreon": "",
-    "github": "",
-    "custom": []
-  },
-  "keywords": [
-    "浮墨", "flomo","同步","sync"
-  ]
+  }
 }
